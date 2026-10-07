@@ -101,8 +101,6 @@ curl -X 'POST' \
 * **What I Would Accept:** Deploying retrieval-augmented generation (RAG) and read-only lookup/availability workflows autonomously to reduce wait times.
 * **What I Would Change:** Any write operation (such as bookings, cancellations, or rescheduling) must require strict deterministic validation schemas or human care coordinator sign-off.
 * **Why:** In Saudi healthcare enterprise contexts, autonomous agent loops carry a high risk of hallucinating tool arguments, overriding patient data incorrectly, or violating compliance policies.
-* **How Speed is Preserved:** By using a hybrid architecture—instant automated RAG and read workflows, coupled with a fast state-machine queue for transactional mutations—we protect Apex AI Arabia from liability while maintaining peak operational velocity.
-
 ---
 
 ## 🤖 AI & Tools Disclosure
