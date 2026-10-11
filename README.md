@@ -40,13 +40,24 @@ pip install -r requirements.txt
 
 ```
 
-
-2. **Run the application:**
+**1. Run locally (development):**
 ```bash
 uvicorn main:app --reload --port 8000
-
 ```
 
+**2. Build the Docker image:**
+```bash
+sudo docker build -t my-rag .
+```
+
+**3. Run the application in Docker:**
+```bash
+sudo docker run -d --name rag-api -p 8000:8000 my-rag
+```
+
+**4. Access the API:**
+
+Open http://localhost:8000/docs in your browser.
 
 3. **Test the endpoint:** Access the interactive Swagger UI documentation at `http://localhost:8000/docs`.
 4. **Run automated tests:**
